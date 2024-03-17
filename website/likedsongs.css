@@ -1,0 +1,77 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+  }
+  
+  /*------------------------------------------------------------------*/
+  
+  sidebar /*ICON BAR TO THE LEFT*/
+{
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 15px;
+}
+  
+.sidebar a 
+{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #4aa75e;
+    display: block;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+  
+.sidebar a:hover 
+{
+    color: #f1f1f1;
+}
+  
+.sidebar .tooltiptext 
+{
+    visibility: hidden;
+    width: 80px;
+    background-color: #4e4e4e;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    border-color:#4e4e4e;
+    padding: 5px 0;
+    position: fixed;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 2s;
+    white-space: nowrap;
+    margin-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.sidebar a:hover .tooltiptext
+{
+    visibility: visible;
+    font-size: 10px;
+    opacity: 1;
+  
+}
+
+@media screen and (max-height: 450px) 
+{
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
