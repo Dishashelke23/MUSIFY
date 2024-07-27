@@ -1,0 +1,230 @@
+* 
+{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+}
+
+ h1 /*MUSIFY TEXT*/
+{
+    margin-left: 945px;
+    padding-top: 20PX;
+    font-size: 100PX;
+    font-family:fantasy ;
+    color:#f1f1f1;
+}
+
+/*--------------------------------------------------------------*/
+
+footer /*ALL RGHTS RESERVED TEXT AREA*/
+{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*-------------------------------------------------------------*/
+
+sidebar /*ICON BAR TO THE LEFT*/
+{
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 15px;
+}
+  
+.sidebar a 
+{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #4aa75e;
+    display: block;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+  
+.sidebar a:hover 
+{
+    color: #f1f1f1;
+}
+  
+.sidebar .tooltiptext 
+{
+    visibility: hidden;
+    width: 80px;
+    background-color: #4e4e4e;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    border-color:#4e4e4e;
+    padding: 5px 0;
+    position: fixed;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 2s;
+    white-space: nowrap;
+    margin-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.sidebar a:hover .tooltiptext
+{
+    visibility: visible;
+    font-size: 10px;
+    opacity: 1;
+  
+}
+
+
+@media screen and (max-height: 450px) 
+{
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+ 
+/*-----------------------------------------------------------*/
+
+.main /*DIV SHAPING*/
+{
+    margin-left: 100px; 
+    padding:20px;
+}
+
+
+#music-library /*GREYISH BACKGROUND*/
+{
+    border: 1px solid #282828;
+    padding: 20px;
+    background-color: #282828;
+    
+}
+
+#music-library h2 /*HOME TEXT*/
+{
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    text-align: left;
+}
+
+#music-library h3 /*ARTIST TEXT*/
+{
+  margin-bottom: 5px;
+}
+
+/*-------------------------------------------------------------*/
+
+.main .artists  /*ARIJIT SINGH LIST*/
+{
+  display: flex;
+  margin-bottom: 50px;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.artists .item
+{
+  min-width: 160px;
+  width: 170px;
+  padding: 15px;
+  background-color: #464545;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.artists .item:hover
+{
+  background-color: #3d3d3d;
+  border-color:#3d3d3d;
+  
+}
+
+.main .artists .item img
+{
+  width: 135px;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.artists .item .play
+{
+  position: relative;
+}
+
+.artists .item .play .fa
+{
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #4aa75e;
+  color: #f1f1f1;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.artists .item:hover .play .fa
+{
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+
+.artists .item h4
+{
+  color: #f1f1f1;
+  font-size: 14px;
+  white-space: nowrap;
+  margin-bottom: 10px ; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artists .item p
+{
+  color: #dddada;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+#music-library h3
+{
+  font-size: 25px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/*----------------------------------------------------------*/
+
+
+
+
+
+  
+  
+  
